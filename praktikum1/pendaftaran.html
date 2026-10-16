@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Peserta</title>
+    <style>
+        body {font-family: Arial;background:#f4f8ff; padding: 25px; color: #333;}
+        h1 { color: #1a56b0; text-align: center;}
+        form {background-color: white; padding: 15px; border: 1px solid #ccd; margin-bottom: 10px;}
+        input, select {margin: 5px;}
+        button {background-color: #1a56b0; color: white; padding: 8px 15px; border: none; cursor: pointer;}
+        table { border-collapse: collapse; width: 100%; background-color: white; }
+        th { background: #1a56b0; color: white; padding: 6px; text-align: center; }
+        td { border: 1px solid #ccd; padding: 6px; }
+        .aktif { background: #e6eefb; }
+        .baris-genap {background-color: #e6eefb;}
+        #judul { font-size: 24px; }
+    </style>
+</head>
+<body>
+    <!-- NIM : 252520060
+    Nama: Malika Alya Dafista
+    Kelas: TI-A -->
+    <h1>Pendaftaran Peserta</h1>
+
+    <!-- Form pendaftaran peserta-->
+    <form action="proses.php" method="post">
+    Nama: <input type="text" name="nama"><br>
+    Jenis Kelamin:
+    <input type="radio" name="jk" value="Laki-laki"> L
+    <input type="radio" name="jk" value="Perempuan"> P<br>
+    Jurusan:
+    <select name="jurusan">
+        <option>Informatika</option>
+        <option>Sistem Informasi</option>
+    </select><br>
+    <button type="submit">Kirim</button>
+    </form><br>
+
+    <!-- Tabel data peserta -->
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Jurusan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Budi Santoso</td>
+            <td>Informatika</td>
+        </tr>
+        <tr class="baris-genap">
+            <td>2</td>
+            <td>Sari Wulandari</td>
+            <td>Sistem Informasi</td>
+        </tr>
+    </table>
+</body>
+</html>
